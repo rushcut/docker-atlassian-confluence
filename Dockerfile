@@ -5,7 +5,7 @@ MAINTAINER Coen Hyde <coen.hyde@gmail.com>
 
 # Install Confluence
 
-ENV CONFLUENCE_VERSION 5.5.6
+ENV CONFLUENCE_VERSION 5.6.4
 RUN curl -Lks http://www.atlassian.com/software/confluence/downloads/binary/atlassian-confluence-${CONFLUENCE_VERSION}.tar.gz -o /root/confluence.tar.gz
 RUN /usr/sbin/useradd --create-home --home-dir /opt/confluence --groups atlassian --shell /bin/bash confluence
 RUN tar zxf /root/confluence.tar.gz --strip=1 -C /opt/confluence
